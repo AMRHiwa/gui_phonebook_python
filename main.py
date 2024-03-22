@@ -2,10 +2,9 @@ from tkinter import *
 
 
 class PhoneBook:
-    info = """Ronak Biniaz
-    Riazi va Karbordha
-    975223010
-    ronak.biniaz@yahoo.com"""
+    info = """This program developed by
+    Mohammad Rasoul Azizi
+    azizi.mr1377@gmail.com"""
     Name_list = []
     famili_list = []
     phone_list = []
@@ -26,7 +25,7 @@ class PhoneBook:
                                    font="arial 20 bold")
         self.welcome_label.place(x=250.0, y=50.0, anchor="center")
 
-        self.ronak_biniaz = Label(self.first_window, text="Ronak Biniaz", background="#ffbfff", foreground="#ff03ff",
+        self.ronak_biniaz = Label(self.first_window, text="Azizi.MR", background="#ffbfff", foreground="#ff03ff",
                                   font="arial 15 bold")
         self.ronak_biniaz.place(x=240, y=90, anchor="center")
 
