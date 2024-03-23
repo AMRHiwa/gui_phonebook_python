@@ -35,6 +35,7 @@ class PhoneBook:
     # Create a empty list for saving the id contant
     id_list = []
 
+    # defination the initial funtion
     def __init__(self):
         self.first_window = Tk()
         self.first_window.title("PhoneBook")
