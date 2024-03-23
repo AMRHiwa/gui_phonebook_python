@@ -36,25 +36,45 @@ class PhoneBook:
     id_list = []
 
     # defination the initial funtion
-    def __init__(self):
+    def __init__(self) -> None:
+        """This function is used to build the initial personalized page."""
+        
+        # create a object from tkinter module for create a window
         self.first_window = Tk()
+
+        # give a title to the our screen
         self.first_window.title("PhoneBook")
+        
+        # give a size for our screen window
         self.first_window.geometry("500x700")
+
+        # removing the changeable size of width and height from your window screen
         self.first_window.resizable(False, False)
+        
+        # getting the a color for our background
         self.first_window.configure(background="#ffbfff")
 
+        # create a label object for write "Welcome to PhoneBook" as message
         self.welcome_label = Label(self.first_window, text="Welcome to PhoneBook", background="#ffbfff",
                                    foreground="#ff03ff",
                                    font="arial 20 bold")
+
+        # change the position of text label in our screen
         self.welcome_label.place(x=250.0, y=50.0, anchor="center")
 
+        # create a label object for write "Azizi" as message
         self.ronak_biniaz = Label(self.first_window, text="Azizi.MR", background="#ffbfff", foreground="#ff03ff",
                                   font="arial 15 bold")
+
+        # change the position of text label in our screen
         self.ronak_biniaz.place(x=240, y=90, anchor="center")
 
+        # create a label object for write number of contant exist in our phonebook
         self.num_contact = Label(self.first_window, text=f"you have {len(self.Name_list)} contact",
                                  background="#ffbfff",
                                  foreground="#801680", font="arial 17 bold")
+
+        # change the position of text label in our screen
         self.num_contact.place(x=243, y=200, anchor="center")
 
         self.add_button = Button(self.first_window, text="Add Contact", background="#b30eb3",
