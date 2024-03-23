@@ -1,16 +1,38 @@
+# this program developed by Mohammad Rasoul Azizi
+
+
+# importing the module
 from tkinter import *
 
-
+# defination the phonebook class
 class PhoneBook:
+
+    # add class attributes
+
+    # save the developer information in info variable
     info = """This program developed by
     Mohammad Rasoul Azizi
     azizi.mr1377@gmail.com"""
+
+    # create a empty list for saving the Name Contant
     Name_list = []
+
+    # Create a empty list for saving the family contant
     famili_list = []
+
+    # Create a empty list for saving the Phone number contant
     phone_list = []
+
+    # Create a empty list for saving the address contant
     address_list = []
+
+    # Create a empty list for saving the email contant
     email_list = []
+
+    # Create a empty list for saving the cellphone contant
     cellphone_list = []
+
+    # Create a empty list for saving the id contant
     id_list = []
 
     def __init__(self):
