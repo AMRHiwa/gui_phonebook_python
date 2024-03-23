@@ -14,25 +14,25 @@ class PhoneBook:
     Mohammad Rasoul Azizi
     azizi.mr1377@gmail.com"""
 
-    # create a empty list for saving the Name Contant
+    # create a empty list for saving the Name contact
     Name_list = []
 
-    # Create a empty list for saving the family contant
+    # Create a empty list for saving the family contact
     famili_list = []
 
-    # Create a empty list for saving the Phone number contant
+    # Create a empty list for saving the Phone number contact
     phone_list = []
 
-    # Create a empty list for saving the address contant
+    # Create a empty list for saving the address contact
     address_list = []
 
-    # Create a empty list for saving the email contant
+    # Create a empty list for saving the email contact
     email_list = []
 
-    # Create a empty list for saving the cellphone contant
+    # Create a empty list for saving the cellphone contact
     cellphone_list = []
 
-    # Create a empty list for saving the id contant
+    # Create a empty list for saving the id contact
     id_list = []
 
     # defination the initial funtion
@@ -69,7 +69,7 @@ class PhoneBook:
         # change the position of text label in our screen
         self.ronak_biniaz.place(x=240, y=90, anchor="center")
 
-        # create a label object for write number of contant exist in our phonebook
+        # create a label object for write number of contact exist in our phonebook
         self.num_contact = Label(self.first_window, text=f"you have {len(self.Name_list)} contact",
                                  background="#ffbfff",
                                  foreground="#801680", font="arial 17 bold")
@@ -77,40 +77,67 @@ class PhoneBook:
         # change the position of text label in our screen
         self.num_contact.place(x=243, y=200, anchor="center")
 
+        # create a Button object for  "add contact" push button
         self.add_button = Button(self.first_window, text="Add Contact", background="#b30eb3",
                                  command=self.make_add_page)
+
+        # change the position of add button in our screen
         self.add_button.place(x=150, y=300, anchor="center")
 
+        # create a Button object for "Search Contact" push button
         self.search_button = Button(self.first_window, text="Search Contact", background="#b30eb3",
                                     command=self.make_search_page)
+
+        # change the position of search button in our screen
         self.search_button.place(x=350, y=300, anchor="center")
 
+        # create a Button object for "Edit Contact" push button
         self.edith_button = Button(self.first_window, text="Edit Contact", background="#b30eb3",
                                    command=self.make_edit_page)
+
+        # change the position of search button in our screen
         self.edith_button.place(x=120, y=350, anchor="center")
 
+        # create a Button object for "Delete Contact" push button
         self.delete_button = Button(self.first_window, text="Delete Contact", background="#b30eb3",
                                     command=self.make_delete_page)
+
+        # change the position of search button in our screen
         self.delete_button.place(x=370, y=350, anchor="center")
 
+        # create a Button object for "Numbers" push button
         self.report_numbers_button = Button(self.first_window, text="Numbers", background="#b30eb3",
                                             command=self.make_show_num)
+
+        # change the position of Numbers button in our screen
         self.report_numbers_button.place(x=320, y=400, anchor="center")
 
+        # create a Button object for "Emails" push button
         self.report_email_button = Button(self.first_window, text="Emails", background="#b30eb3",
                                           command=self.make_show_email)
+
+        # change the position of Emails button in our screen
         self.report_email_button.place(x=242, y=450, anchor="center")
 
+        # create a Button object for "Address" push button
         self.report_address_button = Button(self.first_window, text="Address", background="#b30eb3",
                                             command=self.make_show_address)
+
+        # change the position of Address button in our screen
         self.report_address_button.place(x=170, y=400, anchor="center")
 
+        # create a Button object for "Info" push button
         self.info_button = Button(self.first_window, text="Info", background="#b30eb3", command=self.info_button_func)
+        
+        # change the position of info button in our screen
         self.info_button.place(x=242, y=330, anchor="center")
 
+        # create a label object for when user calling the info function
         self.info_label = Label(self.first_window, background="#ffbfff",
                                 foreground="#7d0a79", font="arial 17 bold")
         # self.aad = self.add_page()
+
+        # running the programm
         self.first_window.mainloop()
 
     def add_page(self):
