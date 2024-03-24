@@ -9,7 +9,14 @@ In this repository for you, I put the "graphic phonebook" program source file, w
 
 
 <h3 id="screen_shot">Screen Shot</h3>
-updating ...
+
+<img src="screen_shots\1.png" width=30%>
+<img src="screen_shots\2.png" width=30%>
+<img src="screen_shots\3.png" width=30%>
+<img src="screen_shots\4.png" width=30%>
+<img src="screen_shots\5.png" width=30%>
+<img src="screen_shots\6.png" width=30%>
+
 
 <h3 id="program_guide">Program Guide</h3>
 updating ...
