@@ -7,7 +7,7 @@ In this repository for you, I put the "graphic phonebook" program source file, w
 2. <a href="#program_guide">Program Guide</a>
 3. <a href="#program_structure">Program Structure</a>
 
-
+---
 <h3 id="screen_shot">Screen Shot</h3>
 
 <img src="screen_shots\1.png" width=30%>
@@ -17,20 +17,21 @@ In this repository for you, I put the "graphic phonebook" program source file, w
 <img src="screen_shots\5.png" width=30%>
 <img src="screen_shots\6.png" width=30%>
 
+---
 
 <h3 id="program_guide">Program Guide</h3>
 
 This app is used to store, display, delete and edit the phonebook contacts and has the following sections:
 
-+   <a href="#">Main Page</a>
-+   <a href="#">Add Contact</a>
-+   <a href="#">Edit Contact</a>
-+   <a href="#">Search Contact</a>
-+   <a href="#">Delete Contact</a>
-+   <a href="#">Show Emails</a>
-+   <a href="#">Show Numbers</a>
-+   <a href="#">Show Addresses</a>
-+   <a href="#">Info</a>
++   <a href="#main_page">Main Page</a>
++   <a href="#add_contact">Add Contact</a>
++   <a href="#edit_contact">Edit Contact</a>
++   <a href="#search_contact">Search Contact</a>
++   <a href="#delete_contact">Delete Contact</a>
++   <a href="#show_emails">Show Emails</a>
++   <a href="#show_numbers">Show Numbers</a>
++   <a href="#show_address">Show Addresses</a>
++   <a href="#info">Info</a>
 
 <h4 id="main_page">Main Page:</h4>
 On this top page that will be displayed to you, a number of buttons are available for applications such as adding, deleting, displaying and editing the contact, which is the main menu for the user.
@@ -59,7 +60,7 @@ In this section all the address stored in the phonebook will be displayed for th
 <h4 id="info">Info:</h4>
 With this button the author's information is displayed on the homepage.
 
-
+---
 
 <h3 id="program_structure">Program Sturcture</h3>
 updating ...
