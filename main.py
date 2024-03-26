@@ -355,9 +355,6 @@ class PhoneBook:
         self.get_address = Entry(self.search_window, width=20)
         self.get_address.place(x=250, y=540, anchor="center")
 
-        # self.save_button = Button(self.search_window, text="Save Contact", background="#b30eb3")
-        # self.save_button.place(x=250, y=590, anchor="center")
-
         self.search_window.mainloop()
 
     def edit_page(self):

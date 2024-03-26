@@ -19,7 +19,18 @@ In this repository for you, I put the "graphic phonebook" program source file, w
 
 
 <h3 id="program_guide">Program Guide</h3>
-updating ...
+
+This app is used to store, display, delete and edit the phonebook contacts and has the following sections:
+
++   <a href="#">Add Contact</a>
++   <a href="#">Edit Contact</a>
++   <a href="#">Search Contact</a>
++   <a href="#">Delete Contact</a>
++   <a href="#">Show Emails</a>
++   <a href="#">Show Numbers</a>
++   <a href="#">Show Addresses</a>
++   <a href="#">Info</a>
+
 
 <h3 id="program_structure">Program Sturcture</h3>
 updating ...
