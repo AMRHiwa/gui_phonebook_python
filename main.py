@@ -180,25 +180,46 @@ class PhoneBook:
         # set pozition for the Entery in add window
         self.get_name.place(x=250, y=100, anchor="center")
 
+        # Create a label for message of "family :"
         self.famili_label = Label(self.add_window, text="family :",
                                   background="#ffbfff", foreground="#ff03ff",
                                   font="arial 10 bold")
+
+        # set pozition for the label in add window
         self.famili_label.place(x=140, y=140, anchor="center")
+
+        # create the Entry for getting family with textbox
         self.get_family = Entry(self.add_window, width=20)
+
+        # set pozition for the Entery in add window
         self.get_family.place(x=250, y=140, anchor="center")
 
+        # Create a label for message of "cellphone :"
         self.cellphone_label = Label(self.add_window, text="Cellphone :",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+
+        # set pozition for the label in add window
         self.cellphone_label.place(x=130, y=180, anchor="center")
+
+        # create the Entry for getting cellphone with textbox
         self.get_cellphone = Entry(self.add_window, width=20)
+
+        # set pozition for the Entery in add window
         self.get_cellphone.place(x=250, y=180, anchor="center")
 
+        # Create a label for message of "Email :"
         self.email_label = Label(self.add_window, text="Email :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
+
+        # set pozition for the label in add window
         self.email_label.place(x=140, y=220, anchor="center")
+
+        # create the Entry for getting Email with textbox
         self.get_email = Entry(self.add_window, width=20)
+
+        # set pozition for the Entery in add window
         self.get_email.place(x=250, y=220, anchor="center")
 
         self.id_label = Label(self.add_window, text="Id :",
