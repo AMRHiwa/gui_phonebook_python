@@ -163,7 +163,7 @@ class PhoneBook:
                                               background="#ffbfff", foreground="#ff03ff",
                                               font="arial 20 bold")
 
-        # set pozition for the label in add window
+        # set position for the label in add window
         self.add_window_welcome_label.place(x=250, y=50, anchor="center")
 
         # Create a label for message of "Name :"
@@ -171,13 +171,13 @@ class PhoneBook:
                                 background="#ffbfff", foreground="#ff03ff",
                                 font="arial 10 bold")
 
-        # set pozition for the label in add window
+        # set position for the label in add window
         self.name_label.place(x=140, y=100, anchor="center")
 
         # create the Entry for getting name with textbox
         self.get_name = Entry(self.add_window, width=20)
 
-        # set pozition for the Entery in add window
+        # set position for the Entery in add window
         self.get_name.place(x=250, y=100, anchor="center")
 
         # Create a label for message of "family :"
@@ -185,13 +185,13 @@ class PhoneBook:
                                   background="#ffbfff", foreground="#ff03ff",
                                   font="arial 10 bold")
 
-        # set pozition for the label in add window
+        # set position for the label in add window
         self.famili_label.place(x=140, y=140, anchor="center")
 
         # create the Entry for getting family with textbox
         self.get_family = Entry(self.add_window, width=20)
 
-        # set pozition for the Entery in add window
+        # set position for the Entery in add window
         self.get_family.place(x=250, y=140, anchor="center")
 
         # Create a label for message of "cellphone :"
@@ -199,13 +199,13 @@ class PhoneBook:
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
 
-        # set pozition for the label in add window
+        # set position for the label in add window
         self.cellphone_label.place(x=130, y=180, anchor="center")
 
         # create the Entry for getting cellphone with textbox
         self.get_cellphone = Entry(self.add_window, width=20)
 
-        # set pozition for the Entery in add window
+        # set position for the Entery in add window
         self.get_cellphone.place(x=250, y=180, anchor="center")
 
         # Create a label for message of "Email :"
@@ -213,45 +213,69 @@ class PhoneBook:
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
 
-        # set pozition for the label in add window
+        # set position for the label in add window
         self.email_label.place(x=140, y=220, anchor="center")
 
         # create the Entry for getting Email with textbox
         self.get_email = Entry(self.add_window, width=20)
 
-        # set pozition for the Entery in add window
+        # set position for the Entery in add window
         self.get_email.place(x=250, y=220, anchor="center")
 
+        # Create a label for message of "ID :"
         self.id_label = Label(self.add_window, text="Id :",
                               background="#ffbfff", foreground="#ff03ff",
                               font="arial 10 bold")
+        
+        # set position for the label in add window
         self.id_label.place(x=140, y=260, anchor="center")
-        self.get_id = Entry(self.add_window, width=20)
-        self.get_id.place(x=250, y=260, anchor="center")
-        #
 
+        # create the Entry for getting ID with textbox
+        self.get_id = Entry(self.add_window, width=20)
+
+        # set position for the Entery in add window
+        self.get_id.place(x=250, y=260, anchor="center")
+
+        # Create a label for message of "Phone :"
         self.phone_label = Label(self.add_window, text="Phone :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
+        
+        # set position for the label in add window
         self.phone_label.place(x=140, y=300, anchor="center")
-        self.get_phone = Entry(self.add_window, width=20)
-        self.get_phone.place(x=250, y=300, anchor="center")
-        #
 
+        # create the Entry for getting phone with textbox
+        self.get_phone = Entry(self.add_window, width=20)
+
+        # set position for the Entery in add window
+        self.get_phone.place(x=250, y=300, anchor="center")
+        
+        # Create a label for message of "Address :"
         self.address_label = Label(self.add_window, text="Address :",
                                    background="#ffbfff", foreground="#ff03ff",
                                    font="arial 10 bold")
+
+        # set position for the label in add window
         self.address_label.place(x=140, y=340, anchor="center")
+
+        # create the Entry for getting address with textbox
         self.get_address = Entry(self.add_window, width=20)
+
+        # set position for the Entery in add window
         self.get_address.place(x=250, y=340, anchor="center")
 
+        # create a button object for saving information in notebook that names "save contact"
         self.save_button = Button(self.add_window, text="Save Contact", background="#b30eb3",
                                   command=self.add_button_func)
+        
+        # set position for the button in add window 
         self.save_button.place(x=250, y=390, anchor="center")
 
+        # Create a label for Status
         self.status_label = Label(self.add_window, background="#ffbfff", foreground="#ff03ff",
                                   font="arial 20 bold")
 
+        # running the window
         self.add_window.mainloop()
 
     def search_page(self):
