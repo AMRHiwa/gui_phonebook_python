@@ -140,21 +140,44 @@ class PhoneBook:
         # running the programm
         self.first_window.mainloop()
 
+    # Define the Add Page Function
     def add_page(self):
+
+        # create a page window with tkinter
         self.add_window = Tk()
+
+        # set title for our window
         self.add_window.title("Add Contact")
+
+        # set size for our window
         self.add_window.geometry("500x700")
+
+        # disable of resizable of our window
         self.add_window.resizable(False, False)
+
+        # set background for our window
         self.add_window.configure(background="#ffbfff")
+
+        # Create a label for message of "Please Enter the information"
         self.add_window_welcome_label = Label(self.add_window, text="Please Enter the information",
                                               background="#ffbfff", foreground="#ff03ff",
                                               font="arial 20 bold")
+
+        # set pozition for the label in add window
         self.add_window_welcome_label.place(x=250, y=50, anchor="center")
+
+        # Create a label for message of "Name :"
         self.name_label = Label(self.add_window, text="Name :",
                                 background="#ffbfff", foreground="#ff03ff",
                                 font="arial 10 bold")
+
+        # set pozition for the label in add window
         self.name_label.place(x=140, y=100, anchor="center")
+
+        # create the Entry for getting name with textbox
         self.get_name = Entry(self.add_window, width=20)
+
+        # set pozition for the Entery in add window
         self.get_name.place(x=250, y=100, anchor="center")
 
         self.famili_label = Label(self.add_window, text="family :",
