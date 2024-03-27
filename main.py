@@ -365,42 +365,69 @@ class PhoneBook:
         # set position for label in window
         self.cellphone_label.place(x=130, y=380, anchor="center")
 
-        # create a textbox object with Entry to get family
+        # create a textbox object with Entry to get cellphone
         self.get_cellphone = Entry(self.search_window, width=20)
 
-        # 
+        # set position for label in window
         self.get_cellphone.place(x=250, y=380, anchor="center")
 
+        # create a label for "Email : " message
         self.email_label = Label(self.search_window, text="Email :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
+
+        # set position for label in window
         self.email_label.place(x=140, y=420, anchor="center")
+
+        # create a textbox object with Entry to get email
         self.get_email = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
         self.get_email.place(x=250, y=420, anchor="center")
 
+        # create a label for "Id : " message
         self.id_label = Label(self.search_window, text="Id :",
                               background="#ffbfff", foreground="#ff03ff",
                               font="arial 10 bold")
-        self.id_label.place(x=140, y=460, anchor="center")
-        self.get_id = Entry(self.search_window, width=20)
-        self.get_id.place(x=250, y=460, anchor="center")
-        #
 
+        # set position for label in window
+        self.id_label.place(x=140, y=460, anchor="center")
+
+        # create a textbox object with Entry to get id
+        self.get_id = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
+        self.get_id.place(x=250, y=460, anchor="center")
+        
+        # create a label for "Phone : " message
         self.phone_label = Label(self.search_window, text="Phone :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
-        self.phone_label.place(x=140, y=500, anchor="center")
-        self.get_phone = Entry(self.search_window, width=20)
-        self.get_phone.place(x=250, y=500, anchor="center")
-        #
 
+        # set position for label in window
+        self.phone_label.place(x=140, y=500, anchor="center")
+
+        # create a textbox object with Entry to get phone
+        self.get_phone = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
+        self.get_phone.place(x=250, y=500, anchor="center")
+        
+        # create a label for "Address : " message
         self.address_label = Label(self.search_window, text="Address :",
                                    background="#ffbfff", foreground="#ff03ff",
                                    font="arial 10 bold")
+
+        # set position for Label in window
         self.address_label.place(x=140, y=540, anchor="center")
+    
+        # create a textbox object with Entry to get address
         self.get_address = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
         self.get_address.place(x=250, y=540, anchor="center")
 
+        # run the window
         self.search_window.mainloop()
 
     def edit_page(self):
