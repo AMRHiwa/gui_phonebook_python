@@ -336,21 +336,39 @@ class PhoneBook:
 
         # set position for label in window
         self.name_label.place(x=140, y=300, anchor="center")
+
+        # create a textbox object with Entry to get name
         self.get_name = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
         self.get_name.place(x=250, y=300, anchor="center")
 
+        # create a label for "Family : " message
         self.famili_label = Label(self.search_window, text="Family :",
                                   background="#ffbfff", foreground="#ff03ff",
                                   font="arial 10 bold")
+
+        # set position for label in window
         self.famili_label.place(x=140, y=340, anchor="center")
+
+        # create a textbox object with Entry to get family
         self.get_family = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
         self.get_family.place(x=250, y=340, anchor="center")
 
+        # create a label for "Cellphone : " message
         self.cellphone_label = Label(self.search_window, text="Cellphone :",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+        
+        # set position for label in window
         self.cellphone_label.place(x=130, y=380, anchor="center")
+
+        # create a textbox object with Entry to get family
         self.get_cellphone = Entry(self.search_window, width=20)
+
+        # 
         self.get_cellphone.place(x=250, y=380, anchor="center")
 
         self.email_label = Label(self.search_window, text="Email :",
