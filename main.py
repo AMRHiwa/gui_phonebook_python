@@ -277,12 +277,23 @@ class PhoneBook:
 
         # running the window
         self.add_window.mainloop()
-
+    
+    # define the search page function
     def search_page(self):
+        
+        # create a window object from tkinter
         self.search_window = Tk()
+
+        # setup the title for page
         self.search_window.title("Add Contact")
+
+        # set size for for page window
         self.search_window.geometry("500x700")
+
+        # disable resizable of window
         self.search_window.resizable(False, False)
+
+        # set background color of window
         self.search_window.configure(background="#ffbfff")
         self.search_window_welcome_label = Label(self.search_window, text="Please Enter the id",
                                                  background="#ffbfff", foreground="#ff03ff",
