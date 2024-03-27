@@ -295,29 +295,46 @@ class PhoneBook:
 
         # set background color of window
         self.search_window.configure(background="#ffbfff")
+
+        # create a label for "Please Enter the id" message
         self.search_window_welcome_label = Label(self.search_window, text="Please Enter the id",
                                                  background="#ffbfff", foreground="#ff03ff",
                                                  font="arial 20 bold")
+        
+        # set position for label in window
         self.search_window_welcome_label.place(x=250, y=50, anchor="center")
 
+        # create a label for "id to search : " message
         self.id_search_label = Label(self.search_window, text="id to search : ",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+
+        # set position for label in window
         self.id_search_label.place(x=120, y=130, anchor="center")
 
+        # create a textbox object with Entry to get id
         self.id_search_entry = Entry(self.search_window, width=20)
+
+        # set position for Entry in window
         self.id_search_entry.place(x=250, y=130, anchor="center")
 
+        # create a label for Status
         self.status_search = Label(self.search_window, background="#ffbfff", foreground="#ff03ff",
                                    font="arial 20 bold")
 
+        # create a button for search in window
         self.search_button = Button(self.search_window, text="Search Contact", background="#b30eb3",
                                     command=self.search_button_func)
+
+        # set position for button in window
         self.search_button.place(x=240, y=180, anchor="center")
 
+        # create a label for "Name : " message
         self.name_label = Label(self.search_window, text="Name :",
                                 background="#ffbfff", foreground="#ff03ff",
                                 font="arial 10 bold")
+
+        # set position for label in window
         self.name_label.place(x=140, y=300, anchor="center")
         self.get_name = Entry(self.search_window, width=20)
         self.get_name.place(x=250, y=300, anchor="center")
