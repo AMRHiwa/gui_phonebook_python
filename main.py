@@ -485,16 +485,26 @@ class PhoneBook:
         # set position for our button in window
         self.search_button.place(x=240, y=180, anchor="center")
 
+        # create a label for "Name : " message
         self.name_label = Label(self.edith_window, text="Name :",
                                 background="#ffbfff", foreground="#ff03ff",
                                 font="arial 10 bold")
+
+        # set postion of label in our window
         self.name_label.place(x=140, y=300, anchor="center")
+
+        # create a Textbox object to get name with Entry Object
         self.get_name = Entry(self.edith_window, width=20)
+
+        # set postion for Entry in our window
         self.get_name.place(x=250, y=300, anchor="center")
 
+        # Create label for "Family : " message
         self.famili_label = Label(self.edith_window, text="Family :",
                                   background="#ffbfff", foreground="#ff03ff",
                                   font="arial 10 bold")
+
+        # set postion for label in our window
         self.famili_label.place(x=140, y=340, anchor="center")
         self.get_family = Entry(self.edith_window, width=20)
         self.get_family.place(x=250, y=340, anchor="center")
