@@ -430,11 +430,22 @@ class PhoneBook:
         # run the window
         self.search_window.mainloop()
 
+    # define the edit page function
     def edit_page(self):
+
+        # create a page of edit with tkinter
         self.edith_window = Tk()
-        self.edith_window.title("Add Contact")
+
+        # set title for our page
+        self.edith_window.title("edit Contact")
+
+        # set size of page for our page
         self.edith_window.geometry("500x700")
+
+        # desiable of resizable of window
         self.edith_window.resizable(False, False)
+
+        # set background color for our page
         self.edith_window.configure(background="#ffbfff")
         self.edith_window_welcome_label = Label(self.edith_window, text="Please Enter the id",
                                                 background="#ffbfff", foreground="#ff03ff",
