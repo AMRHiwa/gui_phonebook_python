@@ -447,14 +447,21 @@ class PhoneBook:
 
         # set background color for our page
         self.edith_window.configure(background="#ffbfff")
+
+        # create a label for "Please Enter the id" message in page
         self.edith_window_welcome_label = Label(self.edith_window, text="Please Enter the id",
                                                 background="#ffbfff", foreground="#ff03ff",
                                                 font="arial 20 bold")
+
+        # set position for our label in window
         self.edith_window_welcome_label.place(x=250, y=50, anchor="center")
 
+        # create a label for "id to search : " message
         self.id_search_label = Label(self.edith_window, text="id to search : ",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+
+        # set position for label in window
         self.id_search_label.place(x=120, y=130, anchor="center")
 
         self.id_search_entry = Entry(self.edith_window, width=20)
