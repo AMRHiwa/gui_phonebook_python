@@ -464,17 +464,25 @@ class PhoneBook:
         # set position for label in window
         self.id_search_label.place(x=120, y=130, anchor="center")
 
+        # create a Textbox object to get id with Entry object
         self.id_search_entry = Entry(self.edith_window, width=20)
+
+        # set postion for Entry in window
         self.id_search_entry.place(x=250, y=130, anchor="center")
 
+        # create a label for Status Search in window
         self.status_search = Label(self.edith_window, background="#ffbfff", foreground="#ff03ff",
                                    font="arial 20 bold")
 
+        # create a label for Status Edit in our window
         self.status_edit = Label(self.edith_window, background="#ffbfff", foreground="#db0d0d",
                                  font="arial 20 bold")
 
+        # Create a button for Searching contant  
         self.search_button = Button(self.edith_window, text="Search Contact", background="#b30eb3",
                                     command=self.search_button_func)
+
+        # set position for our button in window
         self.search_button.place(x=240, y=180, anchor="center")
 
         self.name_label = Label(self.edith_window, text="Name :",
