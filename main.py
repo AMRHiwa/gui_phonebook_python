@@ -521,17 +521,24 @@ class PhoneBook:
         # set position for label in window 
         self.cellphone_label.place(x=130, y=380, anchor="center")
         
-        # 
+        # create a textbox object for getting the cellphone feature with Entry object in tk
         self.get_cellphone = Entry(self.edith_window, width=20)
         
-        
+        # set position of cellphone Entry 
         self.get_cellphone.place(x=250, y=380, anchor="center")
 
+        # create a label for "Email : " message
         self.email_label = Label(self.edith_window, text="Email :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
+
+        # set position for label in our window
         self.email_label.place(x=140, y=420, anchor="center")
-        self.get_email = Entry(self.edith_window, width=20)
+
+        # create a Entry for getting the email 
+        self.get_email = Entry(self.edith_window, width=20)\
+
+        # set postion for Entry in our page
         self.get_email.place(x=250, y=420, anchor="center")
 
         self.id_label = Label(self.edith_window, text="Id :",
