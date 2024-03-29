@@ -536,19 +536,26 @@ class PhoneBook:
         self.email_label.place(x=140, y=420, anchor="center")
 
         # create a Entry for getting the email 
-        self.get_email = Entry(self.edith_window, width=20)\
+        self.get_email = Entry(self.edith_window, width=20)
 
         # set postion for Entry in our page
         self.get_email.place(x=250, y=420, anchor="center")
 
+        # create a label for 'Id :' message
         self.id_label = Label(self.edith_window, text="Id :",
                               background="#ffbfff", foreground="#ff03ff",
                               font="arial 10 bold")
-        self.id_label.place(x=140, y=460, anchor="center")
-        self.get_id = Entry(self.edith_window, width=20)
-        self.get_id.place(x=250, y=460, anchor="center")
-        #
 
+        # set position for label in window
+        self.id_label.place(x=140, y=460, anchor="center")
+
+        # create a Entry object for getting the id
+        self.get_id = Entry(self.edith_window, width=20)
+
+        # set position for Entry
+        self.get_id.place(x=250, y=460, anchor="center")
+        
+        # 
         self.phone_label = Label(self.edith_window, text="Phone :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
