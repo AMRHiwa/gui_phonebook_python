@@ -506,14 +506,25 @@ class PhoneBook:
 
         # set postion for label in our window
         self.famili_label.place(x=140, y=340, anchor="center")
+
+        # create a textbox object for get family feature with Entry object
         self.get_family = Entry(self.edith_window, width=20)
+
+        # set postion for Entry in window
         self.get_family.place(x=250, y=340, anchor="center")
 
+        # create a label for "Cellphone : " message
         self.cellphone_label = Label(self.edith_window, text="Cellphone :",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+
+        # set position for label in window 
         self.cellphone_label.place(x=130, y=380, anchor="center")
+        
+        # 
         self.get_cellphone = Entry(self.edith_window, width=20)
+        
+        
         self.get_cellphone.place(x=250, y=380, anchor="center")
 
         self.email_label = Label(self.edith_window, text="Email :",
