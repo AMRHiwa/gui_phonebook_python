@@ -593,27 +593,51 @@ class PhoneBook:
         # run page
         self.edith_window.mainloop()
 
+    # define the delete_page function
     def delete_page(self):
+
+        # create a window object with Tkinter module
         self.delete_window = Tk()
-        self.delete_window.title("Add Contact")
+
+        # add title for window
+        self.delete_window.title("delete Contact")
+
+        # set size of width and height for our label
         self.delete_window.geometry("500x700")
+
+        # disable of resizable window
         self.delete_window.resizable(False, False)
+
+        # set background color for window
         self.delete_window.configure(background="#ffbfff")
+
+        # create a label for set "Please Enter the id" message
         self.delete_window_welcome_label = Label(self.delete_window, text="Please Enter the id",
                                                  background="#ffbfff", foreground="#ff03ff",
                                                  font="arial 20 bold")
+
+        # set position for our label
         self.delete_window_welcome_label.place(x=250, y=50, anchor="center")
 
+        # create a label for setting the "id to search: " message on it
         self.id_search_label = Label(self.delete_window, text="id to search : ",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+
+        # set position for label in window
         self.id_search_label.place(x=120, y=130, anchor="center")
 
+        # create a Entry object for getting the id
         self.id_search_entry = Entry(self.delete_window, width=20)
+
+        # set position for our Entry
         self.id_search_entry.place(x=250, y=130, anchor="center")
+
+        # create a label object for setting the status situation
         self.status_search = Label(self.delete_window, background="#ffbfff", foreground="#ff03ff",
                                    font="arial 20 bold")
 
+        # set position for our label
         self.status_delete = Label(self.delete_window, background="#ffbfff", foreground="#db0d0d",
                                    font="arial 20 bold")
 
