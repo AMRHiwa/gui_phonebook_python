@@ -641,27 +641,48 @@ class PhoneBook:
         self.status_delete = Label(self.delete_window, background="#ffbfff", foreground="#db0d0d",
                                    font="arial 20 bold")
 
+        # create a button for search in information with name "Search Contact"
         self.search_button = Button(self.delete_window, text="Search Contact", background="#b30eb3",
                                     command=self.search_button_func)
+
+        # set position for our button
         self.search_button.place(x=240, y=180, anchor="center")
 
+        # create a label for set "Name :" message
         self.name_label = Label(self.delete_window, text="Name :",
                                 background="#ffbfff", foreground="#ff03ff",
                                 font="arial 10 bold")
+
+        # set position for label
         self.name_label.place(x=140, y=300, anchor="center")
+        
+        # create a Entry for getting name information
         self.get_name = Entry(self.delete_window, width=20)
+
+        # set position for Entry
         self.get_name.place(x=250, y=300, anchor="center")
 
+
+        # create a label object for setting "Family :" message
         self.famili_label = Label(self.delete_window, text="Family :",
                                   background="#ffbfff", foreground="#ff03ff",
                                   font="arial 10 bold")
+
+        # set position for our label 
         self.famili_label.place(x=140, y=340, anchor="center")
+
+        # create a Entry object for getting family information
         self.get_family = Entry(self.delete_window, width=20)
+
+        # set position for Entry 
         self.get_family.place(x=250, y=340, anchor="center")
 
+        # create a label for setting "Cellphone :" message
         self.cellphone_label = Label(self.delete_window, text="Cellphone :",
                                      background="#ffbfff", foreground="#ff03ff",
                                      font="arial 10 bold")
+
+        # set position for label object
         self.cellphone_label.place(x=130, y=380, anchor="center")
         self.get_cellphone = Entry(self.delete_window, width=20)
         self.get_cellphone.place(x=250, y=380, anchor="center")
