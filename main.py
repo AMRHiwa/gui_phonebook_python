@@ -555,25 +555,42 @@ class PhoneBook:
         # set position for Entry
         self.get_id.place(x=250, y=460, anchor="center")
         
-        # 
+        # create a label for set 'phone : ' message
         self.phone_label = Label(self.edith_window, text="Phone :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
-        self.phone_label.place(x=140, y=500, anchor="center")
-        self.get_phone = Entry(self.edith_window, width=20)
-        self.get_phone.place(x=250, y=500, anchor="center")
-        #
 
+        # set position for label in our label
+        self.phone_label.place(x=140, y=500, anchor="center")
+
+        # create a Entry for getting the phone numuber with textbox
+        self.get_phone = Entry(self.edith_window, width=20)
+
+        # set position for our Entry in window
+        self.get_phone.place(x=250, y=500, anchor="center")
+        
+        # create a label for set "Address :" message on it
         self.address_label = Label(self.edith_window, text="Address :",
                                    background="#ffbfff", foreground="#ff03ff",
                                    font="arial 10 bold")
+
+        # set position for label in window
         self.address_label.place(x=140, y=540, anchor="center")
+
+        # create a entry for getting the address
         self.get_address = Entry(self.edith_window, width=20)
+
+        # set position for entry in window
         self.get_address.place(x=250, y=540, anchor="center")
 
+        # create a button object names 'save change' for save all chainging inforamtion
         self.save_changes_button = Button(self.edith_window, text="Save Contact", background="#b30eb3",
                                           command=self.save_change_button_func)
+
+        # set position for our button
         self.save_changes_button.place(x=250, y=590, anchor="center")
+
+        # run page
         self.edith_window.mainloop()
 
     def delete_page(self):
