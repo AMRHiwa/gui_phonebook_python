@@ -684,19 +684,33 @@ class PhoneBook:
 
         # set position for label object
         self.cellphone_label.place(x=130, y=380, anchor="center")
+
+        # create a Entry object for getting the cellphone number
         self.get_cellphone = Entry(self.delete_window, width=20)
+
+        # set position for Entry object
         self.get_cellphone.place(x=250, y=380, anchor="center")
 
+        # create a label object for setting "Email :" object
         self.email_label = Label(self.delete_window, text="Email :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
+
+        # set position for label object
         self.email_label.place(x=140, y=420, anchor="center")
+
+        # create a Entry object for getting the email
         self.get_email = Entry(self.delete_window, width=20)
+
+        # set position for our Entry object
         self.get_email.place(x=250, y=420, anchor="center")
 
+        # create a label object for setting "id" message
         self.id_label = Label(self.delete_window, text="Id :",
                               background="#ffbfff", foreground="#ff03ff",
                               font="arial 10 bold")
+
+        # set position for label object
         self.id_label.place(x=140, y=460, anchor="center")
         self.get_id = Entry(self.delete_window, width=20)
         self.get_id.place(x=250, y=460, anchor="center")
