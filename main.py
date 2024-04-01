@@ -758,13 +758,25 @@ class PhoneBook:
         # run page
         self.delete_window.mainloop()
 
+    # define the make_add_page
     def make_add_page(self):
+        ''' this function used for call the add_page function to create a window '''
+        
+        # create a add_page with calling the add_page method
         self.add1 = self.add_page()
 
+    # define the make_search_page
     def make_search_page(self):
+        ''' this function used for call the search_page function to create a window '''
+
+        # create a search_page with calling the search_page 
         self.search1 = self.search_page()
 
+    # define the make_delete_page function
     def make_delete_page(self):
+        ''' this function used for call the delete_page function to create a window '''
+        
+        # create a delete_page window by calling the delete_page method
         self.delete1 = self.delete_page()
 
     def make_edit_page(self):
