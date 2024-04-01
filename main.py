@@ -775,20 +775,36 @@ class PhoneBook:
     # define the make_delete_page function
     def make_delete_page(self):
         ''' this function used for call the delete_page function to create a window '''
-        
+
         # create a delete_page window by calling the delete_page method
         self.delete1 = self.delete_page()
 
+    # define the make_edit_page
     def make_edit_page(self):
+        ''' this function use for calling the edit_page function to create own page '''
+
+        # create edit page by calling the edit_page method
         self.edit1 = self.edit_page()
 
+    # define the make_show_num
     def make_show_num(self):
+        ''' this function used calling the show_num function to create a own page '''
+
+        # create a show_numb_page object by calling the show_num method
         self.show_num_page = self.show_num()
 
+    # define the show_emails 
     def make_show_email(self):
+        '''this function used for create a window to show all storage emails in our phone book'''
+
+        # create a show_email_page by calling the show_email method
         self.show_email_page = self.show_email()
 
+    # define the make_show_address method
     def make_show_address(self):
+        '''this function used for create a window that show all storage address in phonebook on it'''
+
+        # create a window to show address with calling the show_adres function
         self.show_adres_page = self.show_adres()
 
     def add_button_func(self):
