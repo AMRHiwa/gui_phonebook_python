@@ -712,29 +712,50 @@ class PhoneBook:
 
         # set position for label object
         self.id_label.place(x=140, y=460, anchor="center")
-        self.get_id = Entry(self.delete_window, width=20)
-        self.get_id.place(x=250, y=460, anchor="center")
-        #
 
+        # create a Entry object for getting the id information
+        self.get_id = Entry(self.delete_window, width=20)
+
+        # set position for Entry object
+        self.get_id.place(x=250, y=460, anchor="center")
+    
+        # create a label object for setting the "Phone :" message
         self.phone_label = Label(self.delete_window, text="Phone :",
                                  background="#ffbfff", foreground="#ff03ff",
                                  font="arial 10 bold")
-        self.phone_label.place(x=140, y=500, anchor="center")
-        self.get_phone = Entry(self.delete_window, width=20)
-        self.get_phone.place(x=250, y=500, anchor="center")
-        #
 
+        # set position for label object
+        self.phone_label.place(x=140, y=500, anchor="center")
+
+        # create a Entry object for getting phone number
+        self.get_phone = Entry(self.delete_window, width=20)
+
+        # set position for Entry object 
+        self.get_phone.place(x=250, y=500, anchor="center")
+        
+        # create a label object for setting "Address :" message
         self.address_label = Label(self.delete_window, text="Address :",
                                    background="#ffbfff", foreground="#ff03ff",
                                    font="arial 10 bold")
+        
+        # set position for label object
         self.address_label.place(x=140, y=540, anchor="center")
+
+        # create a Entry object for getting address
         self.get_address = Entry(self.delete_window, width=20)
+
+        # set position for Entry object
         self.get_address.place(x=250, y=540, anchor="center")
 
+
+        # create a button for delete a contact
         self.delete_button1 = Button(self.delete_window, text="Delete Contact", background="#db0d0d",
                                      command=self.delete_button_func)
+
+        # set postion for Entry object
         self.delete_button1.place(x=250, y=590, anchor="center")
 
+        # run page
         self.delete_window.mainloop()
 
     def make_add_page(self):
