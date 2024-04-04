@@ -833,25 +833,13 @@ class PhoneBook:
         # add any thing was in get_id Entry to id_list
         self.id_list.append(self.get_id.get())
 
-        # fill get_name Entry with nothing
+        # fill all textboxes Entry with nothing
         self.get_name.delete(0, END)
-
-        # fill get_family Entry with nothing
         self.get_family.delete(0, END)
-        
-        # fill get_id Entry with nothing
         self.get_id.delete(0, END)
-        
-        # fill get_phone Entry with nothing
         self.get_phone.delete(0, END)
-        
-        # fill get_address Entry with nothing
         self.get_address.delete(0, END)
-        
-        # fill get_cellphone Entry with nothing
         self.get_cellphone.delete(0, END)
-        
-        # fill get_email Entry with nothing
         self.get_email.delete(0, END)
         
         # saving the message for number of contant in our phonebook
@@ -863,14 +851,31 @@ class PhoneBook:
         # set position for our label
         self.status_label.place(x=250, y=500, anchor="center")
 
+    # define the search_button_func
     def search_button_func(self):
+        '''this is function used for searching the contact from list
+        by the special id'''
+
+        # getting the specfic id from id_search_entry
         id_text = self.id_search_entry.get()
+        
+        # create a flag for status of founding the contact 
         found = 0
+
+        # searching the id one by one
         for i in range(len(self.id_list)):
+
+            # check the user's id entered with all id that saved in phonebook
             if self.id_list[i] == id_text:
+
+                # save the message for status of searching
                 self.status_search["text"] = "Contact Found"
+
+                # set position for status_label 
                 self.status_search.place(x=250, y=220, anchor="center")
 
+
+                # delete all information in all textboxes in page
                 self.get_name.delete(0, END)
                 self.get_family.delete(0, END)
                 self.get_id.delete(0, END)
@@ -879,6 +884,7 @@ class PhoneBook:
                 self.get_cellphone.delete(0, END)
                 self.get_email.delete(0, END)
 
+                # fill all textboxes by that information saved in phonebook with that id
                 self.get_id.insert(0, self.id_list[i])
                 self.get_family.insert(0, self.famili_list[i])
                 self.get_phone.insert(0, self.phone_list[i])
@@ -886,8 +892,13 @@ class PhoneBook:
                 self.get_email.insert(0, self.email_list[i])
                 self.get_cellphone.insert(0, self.cellphone_list[i])
                 self.get_address.insert(0, self.address_list[i])
+
+                # change the setuation of flag to True
                 found = 1
+
+                # exiting the loop
                 break
+        
         if found == 0:
             self.status_search["text"] = "Contact Not Found"
             self.status_search.place(x=250, y=220, anchor="center")
