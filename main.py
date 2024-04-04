@@ -807,22 +807,54 @@ class PhoneBook:
         # create a window to show address with calling the show_adres function
         self.show_adres_page = self.show_adres()
 
+    # define the add_button_func
     def add_button_func(self):
+        '''this function get all information that wrote in textboxes and
+        add them to the list as contact'''
+
+        # add any thing was in get_name Entry to Name_list
         self.Name_list.append(self.get_name.get())
+
+        # add any thing was in get_family Entry to Family_list
         self.famili_list.append(self.get_family.get())
+
+        # add any thing was in get_cellphone Entry to cellphone_list
         self.cellphone_list.append(self.get_cellphone.get())
+
+        # add any thing was in get_email Entry to email_list
         self.email_list.append(self.get_email.get())
+
+        # add any thing was in get_phone Entry to phone_list
         self.phone_list.append(self.get_phone.get())
+
+        # add any thing was in get_address Entry to address_list
         self.address_list.append(self.get_address.get())
+
+        # add any thing was in get_id Entry to id_list
         self.id_list.append(self.get_id.get())
 
+        # fill get_name Entry with nothing
         self.get_name.delete(0, END)
+
+        # fill get_family Entry with nothing
         self.get_family.delete(0, END)
+        
+        # fill get_id Entry with nothing
         self.get_id.delete(0, END)
+        
+        # fill get_phone Entry with nothing
         self.get_phone.delete(0, END)
+        
+        # fill get_address Entry with nothing
         self.get_address.delete(0, END)
+        
+        # fill get_cellphone Entry with nothing
         self.get_cellphone.delete(0, END)
+        
+        # fill get_email Entry with nothing
         self.get_email.delete(0, END)
+        
+        
         self.num_contact["text"] = f"you have {len(self.Name_list)} contact"
         self.status_label["text"] = "Contact Saved"
         self.status_label.place(x=250, y=500, anchor="center")
