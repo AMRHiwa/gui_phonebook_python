@@ -893,14 +893,18 @@ class PhoneBook:
                 self.get_cellphone.insert(0, self.cellphone_list[i])
                 self.get_address.insert(0, self.address_list[i])
 
-                # change the setuation of flag to True
+                # change the situation of flag to True
                 found = 1
 
                 # exiting the loop
                 break
-        
+        # checking the status of flag
         if found == 0:
+            
+            # showing the situation of searching with the label
             self.status_search["text"] = "Contact Not Found"
+
+            # set position for our label
             self.status_search.place(x=250, y=220, anchor="center")
 
     def delete_button_func(self):
