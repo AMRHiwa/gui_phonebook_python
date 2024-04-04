@@ -854,9 +854,13 @@ class PhoneBook:
         # fill get_email Entry with nothing
         self.get_email.delete(0, END)
         
-        
+        # saving the message for number of contant in our phonebook
         self.num_contact["text"] = f"you have {len(self.Name_list)} contact"
+
+        # saving the message for our Status
         self.status_label["text"] = "Contact Saved"
+
+        # set position for our label
         self.status_label.place(x=250, y=500, anchor="center")
 
     def search_button_func(self):
