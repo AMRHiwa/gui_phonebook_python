@@ -1039,19 +1039,45 @@ class PhoneBook:
         # runnig the page
         self.show_all.mainloop()
 
+    
+    # define the show_adres function
     def show_adres(self):
+
+        # create a window Tkinter
         self.show_all = Tk()
+
+        # set title for our window
         self.show_all.title("Show Address")
+
+        # set background color for our window
         self.show_all.configure(background="#ffbfff")
+
+        # create a scorllbar with a specific color
         self.scorll_all = Scrollbar(self.show_all, background="#ff03ff")
+        
+        # set geometry for window
         self.show_all.geometry("500x700")
+
+        # disable resizable our window
         self.show_all.resizable(False, False)
+
+        # pack scrollbar with y axis in right side
         self.scorll_all.pack(side=RIGHT, fill=Y)
+
+        # create a listbox for show_all page with scrollbar
         my_list = Listbox(self.show_all, yscrollcommand=self.scorll_all.set, background="#ffbfff", width=60)
+
+        # showing all address those storage in phonebook
         for i in range(len(self.address_list)):
             my_list.insert(END, f"#{i + 1}  {self.address_list[i]}")
+        
+        # pack the listbox in left side
         my_list.pack(side=LEFT, fill=BOTH)
+
+        # config the scorllbar
         self.scorll_all.config(command=my_list.yview)
+        
+        # runnig the page
         self.show_all.mainloop()
 
     def show_email(self):
