@@ -907,10 +907,19 @@ class PhoneBook:
             # set position for our label
             self.status_search.place(x=250, y=220, anchor="center")
 
+    # define the delete_button_func
     def delete_button_func(self):
+
+        # getting the special id for deleting the concant
         id_text = self.id_search_entry.get()
+
+        # searching the all id, one by one
         for i in range(len(self.id_list)):
+
+            # checking the special id in storage id in phonebook
             if self.id_list[i] == id_text:
+
+                # delete the all information from phonebook
                 del self.Name_list[i]
                 del self.famili_list[i]
                 del self.phone_list[i]
@@ -919,6 +928,7 @@ class PhoneBook:
                 del self.email_list[i]
                 del self.id_list[i]
 
+                # delete all texts from all textboxes
                 self.get_id.delete(0, END)
                 self.get_phone.delete(0, END)
                 self.get_name.delete(0, END)
@@ -927,9 +937,16 @@ class PhoneBook:
                 self.get_cellphone.delete(0, END)
                 self.get_address.delete(0, END)
 
+                # saving the 'contact deleted' message
                 self.status_delete["text"] = "Contact Deleted"
+
+                # set position for our label
                 self.status_delete.place(x=250, y=640, anchor="center")
+
+                # changing the message from main page
                 self.num_contact["text"] = f"you have {len(self.Name_list)} contact"
+                
+                # break the loop
                 break
 
     def save_change_button_func(self):
