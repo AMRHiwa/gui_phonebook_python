@@ -949,10 +949,19 @@ class PhoneBook:
                 # break the loop
                 break
 
+    # define the save_change_button_func
     def save_change_button_func(self):
+
+        # getting the special id from own textbox
         id_text = self.id_search_entry.get()
+
+        # searching all ids, one by one
         for i in range(len(self.id_list)):
+
+            # checking the special id in storage ids in phonebook
             if self.id_list[i] == id_text:
+
+                # saving the new information to found index contact
                 self.Name_list[i] = self.get_name.get()
                 self.famili_list[i] = self.get_family.get()
                 self.phone_list[i] = self.get_phone.get()
@@ -961,6 +970,7 @@ class PhoneBook:
                 self.email_list[i] = self.get_email.get()
                 self.id_list[i] = self.get_id.get()
 
+                # delete all texts from all textboxes
                 self.get_id.delete(0, END)
                 self.get_phone.delete(0, END)
                 self.get_name.delete(0, END)
@@ -969,8 +979,13 @@ class PhoneBook:
                 self.get_cellphone.delete(0, END)
                 self.get_address.delete(0, END)
 
+                # save the message for situation status of chaning data
                 self.status_edit["text"] = "Change Saved"
+
+                # set position for the label
                 self.status_edit.place(x=250, y=640, anchor="center")
+
+                # exiting from loop
                 break
 
     def info_button_func(self):
