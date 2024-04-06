@@ -988,8 +988,13 @@ class PhoneBook:
                 # exiting from loop
                 break
 
+    # define the info_button_func
     def info_button_func(self):
+        
+        # showing the saved information in main page
         self.info_label["text"] = self.info
+
+        # set position for label in main page
         self.info_label.place(x=235, y=570, anchor="center")
 
     def show_num(self):
