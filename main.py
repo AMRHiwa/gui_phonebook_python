@@ -997,19 +997,46 @@ class PhoneBook:
         # set position for label in main page
         self.info_label.place(x=235, y=570, anchor="center")
 
+    # define the show_num function
     def show_num(self):
+
+        # create a page from tkinter module
         self.show_all = Tk()
+
+        # set title for our page
         self.show_all.title("Show all")
+
+        # set color background for our page
         self.show_all.configure(background="#ffbfff")
+
+        # create a scorllbar object for our label
         self.scorll_all = Scrollbar(self.show_all, background="#ff03ff")
+        
+        # set geometry for our page
         self.show_all.geometry("500x700")
+
+        # disable the resizable of window
         self.show_all.resizable(False, False)
+
+        # set scorllbar in right side in y axis
         self.scorll_all.pack(side=RIGHT, fill=Y)
+
+        # create a listbox for showing the numbers with scorllbar with color background
         my_list = Listbox(self.show_all, yscrollcommand=self.scorll_all.set, background="#ffbfff", width=60)
+        
+        # write all numbers those saved in phonebook
         for i in range(len(self.cellphone_list)):
+
+            # add message with number and phonenumbers to listbox
             my_list.insert(END, f"#{i + 1}  {self.cellphone_list[i]}")
+
+        # set listbox to our page in left side
         my_list.pack(side=LEFT, fill=BOTH)
+
+        # config list in y axis
         self.scorll_all.config(command=my_list.yview)
+
+        # runnig the page
         self.show_all.mainloop()
 
     def show_adres(self):
