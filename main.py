@@ -6,7 +6,7 @@ from tkinter import *
 
 # defination the phonebook class
 class PhoneBook:
-
+    '''This class is to implement the entire structure of the phonebook'''
     # add class attributes
 
     # save the developer information in info variable
@@ -141,7 +141,8 @@ class PhoneBook:
         self.first_window.mainloop()
 
     # Define the Add Page Function
-    def add_page(self):
+    def add_page(self) -> None:
+        '''This function is used to build the graphic mode of the page add'''
 
         # create a page window with tkinter
         self.add_window = Tk()
@@ -279,7 +280,8 @@ class PhoneBook:
         self.add_window.mainloop()
     
     # define the search page function
-    def search_page(self):
+    def search_page(self) -> None:
+        '''This function is used to build a graphic page to search the audience'''
         
         # create a window object from tkinter
         self.search_window = Tk()
@@ -431,7 +433,8 @@ class PhoneBook:
         self.search_window.mainloop()
 
     # define the edit page function
-    def edit_page(self):
+    def edit_page(self) -> None:
+        '''This function is used to build the graphic page of the Contact Edit'''
 
         # create a page of edit with tkinter
         self.edith_window = Tk()
