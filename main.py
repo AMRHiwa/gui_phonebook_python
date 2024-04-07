@@ -912,7 +912,7 @@ class PhoneBook:
             self.status_search.place(x=250, y=220, anchor="center")
 
     # define the delete_button_func
-    def delete_button_func(self):
+    def delete_button_func(self) -> None:
 
         # getting the special id for deleting the concant
         id_text = self.id_search_entry.get()
@@ -954,7 +954,7 @@ class PhoneBook:
                 break
 
     # define the save_change_button_func
-    def save_change_button_func(self):
+    def save_change_button_func(self) -> None:
 
         # getting the special id from own textbox
         id_text = self.id_search_entry.get()
@@ -993,7 +993,7 @@ class PhoneBook:
                 break
 
     # define the info_button_func
-    def info_button_func(self):
+    def info_button_func(self) -> None:
         
         # showing the saved information in main page
         self.info_label["text"] = self.info
@@ -1002,7 +1002,7 @@ class PhoneBook:
         self.info_label.place(x=235, y=570, anchor="center")
 
     # define the show_num function
-    def show_num(self):
+    def show_num(self) -> None:
 
         # create a page from tkinter module
         self.show_all = Tk()
@@ -1045,7 +1045,7 @@ class PhoneBook:
 
     
     # define the show_adres function
-    def show_adres(self):
+    def show_adres(self) -> None:
 
         # create a window Tkinter
         self.show_all = Tk()
@@ -1085,7 +1085,7 @@ class PhoneBook:
         self.show_all.mainloop()
 
     # define the show_email function
-    def show_email(self):
+    def show_email(self) -> None:
 
         # create a window with tkinter object
         self.show_all = Tk()
