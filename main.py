@@ -1080,19 +1080,44 @@ class PhoneBook:
         # runnig the page
         self.show_all.mainloop()
 
+    # define the show_email function
     def show_email(self):
+
+        # create a window with tkinter object
         self.show_all = Tk()
+
+        # set a name for our page
         self.show_all.title("Show Emails")
+
+        # set background color for our page
         self.show_all.configure(background="#ffbfff")
+
+        # create a scrollbar
         self.scorll_all = Scrollbar(self.show_all, background="#ff03ff")
+
+        # set a geometry of our window
         self.show_all.geometry("500x700")
+
+        # disable resiable of window
         self.show_all.resizable(False, False)
+
+        # pack the scorllbar in right side and y axis
         self.scorll_all.pack(side=RIGHT, fill=Y)
+
+        # create a listbox for showwing the emails on it
         my_list = Listbox(self.show_all, yscrollcommand=self.scorll_all.set, background="#ffbfff", width=60)
+        
+        # add all storage email one by one in listbox for show
         for i in range(len(self.email_list)):
             my_list.insert(END, f"#{i + 1}  {self.email_list[i]}")
+
+        # pack the list box on our window in left side
         my_list.pack(side=LEFT, fill=BOTH)
+
+        # config scrollbar with y axis in listbox
         self.scorll_all.config(command=my_list.yview)
+
+        # runt the page
         self.show_all.mainloop()
 
 
