@@ -597,7 +597,8 @@ class PhoneBook:
         self.edith_window.mainloop()
 
     # define the delete_page function
-    def delete_page(self):
+    def delete_page(self) -> None:
+        '''This function is used to build a graphic page of the contact page'''
 
         # create a window object with Tkinter module
         self.delete_window = Tk()
@@ -762,56 +763,56 @@ class PhoneBook:
         self.delete_window.mainloop()
 
     # define the make_add_page
-    def make_add_page(self):
+    def make_add_page(self) -> None:
         ''' this function used for call the add_page function to create a window '''
         
         # create a add_page with calling the add_page method
         self.add1 = self.add_page()
 
     # define the make_search_page
-    def make_search_page(self):
+    def make_search_page(self) -> None:
         ''' this function used for call the search_page function to create a window '''
 
         # create a search_page with calling the search_page 
         self.search1 = self.search_page()
 
     # define the make_delete_page function
-    def make_delete_page(self):
+    def make_delete_page(self) -> None:
         ''' this function used for call the delete_page function to create a window '''
 
         # create a delete_page window by calling the delete_page method
         self.delete1 = self.delete_page()
 
     # define the make_edit_page
-    def make_edit_page(self):
+    def make_edit_page(self) -> None:
         ''' this function use for calling the edit_page function to create own page '''
 
         # create edit page by calling the edit_page method
         self.edit1 = self.edit_page()
 
     # define the make_show_num
-    def make_show_num(self):
+    def make_show_num(self) -> None:
         ''' this function used calling the show_num function to create a own page '''
 
         # create a show_numb_page object by calling the show_num method
         self.show_num_page = self.show_num()
 
     # define the show_emails 
-    def make_show_email(self):
+    def make_show_email(self) -> None:
         '''this function used for create a window to show all storage emails in our phone book'''
 
         # create a show_email_page by calling the show_email method
         self.show_email_page = self.show_email()
 
     # define the make_show_address method
-    def make_show_address(self):
+    def make_show_address(self) -> None:
         '''this function used for create a window that show all storage address in phonebook on it'''
 
         # create a window to show address with calling the show_adres function
         self.show_adres_page = self.show_adres()
 
     # define the add_button_func
-    def add_button_func(self):
+    def add_button_func(self) -> None:
         '''this function get all information that wrote in textboxes and
         add them to the list as contact'''
 
@@ -855,7 +856,7 @@ class PhoneBook:
         self.status_label.place(x=250, y=500, anchor="center")
 
     # define the search_button_func
-    def search_button_func(self):
+    def search_button_func(self) -> None:
         '''this is function used for searching the contact from list
         by the special id'''
 
