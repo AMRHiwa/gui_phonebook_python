@@ -1120,5 +1120,5 @@ class PhoneBook:
         # runt the page
         self.show_all.mainloop()
 
-
+# create a phonebook object to run program
 phonebook = PhoneBook()
