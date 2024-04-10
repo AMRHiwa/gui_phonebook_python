@@ -63,5 +63,14 @@ With this button the author's information is displayed on the homepage.
 ---
 
 <h3 id="program_structure">Program Sturcture</h3>
-updating ...
 
+this program developed by one class that is include many methods:
+
+
++ PhoneBook Class
+
+the methods:
+
++ initial function
++ add_page
++ search_page
