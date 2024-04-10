@@ -74,3 +74,7 @@ the methods:
 + initial function
 + add_page
 + search_page
++ delete_page
++ edit_page
++ make_add_page
++ make_search_page
