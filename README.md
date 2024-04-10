@@ -78,3 +78,8 @@ the methods:
 + edit_page
 + make_add_page
 + make_search_page
++ make_delete_page
++ make_edit_page
++ make_show_num
++ make_show_adres
++ make_show_email
