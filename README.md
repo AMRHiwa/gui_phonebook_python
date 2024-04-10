@@ -71,23 +71,23 @@ this program developed by one class that is include many methods:
 
 the methods:
 
-+ initial function
-+ add_page
-+ search_page
-+ delete_page
-+ edit_page
-+ make_add_page
-+ make_search_page
-+ make_delete_page
-+ make_edit_page
-+ make_show_num
-+ make_show_address
-+ make_show_email
-+ add_button_func
-+ search_button_func
-+ delete_button_func
-+ save_change_button_func
-+ info_button_func
-+ show_num
-+ show_adres
-+ show_email
++ <a href=""> initial function </a>
++ <a href="">add_page</a>
++ <a href="">search_page</a>
++ <a href="">delete_page</a>
++ <a href="">edit_page</a>
++ <a href="">make_add_page</a>
++ <a href="">make_search_page</a>
++ <a href="">make_delete_page</a>
++ <a href="">make_edit_page</a>
++ <a href="">make_show_num</a>
++ <a href="">make_show_address</a>
++ <a href="">make_show_email</a>
++ <a href="">add_button_func</a>
++ <a href="">search_button_func</a>
++ <a href="">delete_button_func</a>
++ <a href="">save_change_button_func</a>
++ <a href="">info_button_func</a>
++ <a href="">show_num</a>
++ <a href="">show_adres</a>
++ <a href="">show_email</a>
