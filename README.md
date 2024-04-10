@@ -87,3 +87,7 @@ the methods:
 + search_button_func
 + delete_button_func
 + save_change_button_func
++ info_button_func
++ show_num
++ show_adres
++ show_email
