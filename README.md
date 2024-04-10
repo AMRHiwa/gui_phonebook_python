@@ -91,3 +91,15 @@ the methods:
 + <a href="">show_num</a>
 + <a href="">show_adres</a>
 + <a href="">show_email</a>
+
+
+
+<h3 id="init"> initial function </h3>
+updating ...
+
+<h3 id="add_page">add_page</h3>
+updating ...
+
+<h3 id="search_page">search_page</h3>
+updating ...
+
