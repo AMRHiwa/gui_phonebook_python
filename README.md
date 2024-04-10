@@ -81,5 +81,9 @@ the methods:
 + make_delete_page
 + make_edit_page
 + make_show_num
-+ make_show_adres
++ make_show_address
 + make_show_email
++ add_button_func
++ search_button_func
++ delete_button_func
++ save_change_button_func
